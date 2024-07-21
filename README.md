@@ -4,7 +4,8 @@ version: 1.0<br>
 Reviews Details: All reviews related to a genuine travel agency.<br>
 Author Website: https://jay.heavenofholiday.com<br>
 Description: a simple google slider review JS plugin using slick slider and jQuery google reviews plugins<br>
-Credits: Slick slider developers team, Jquery-google-reviews's Jason Long 
+Credits: Slick slider developers team, Jquery-google-reviews's Jason Long<br>
+Reach out for assistance with integrating Google Business reviews into your website.
 
 
 # Pre - Requisits 
