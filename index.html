@@ -119,7 +119,7 @@
 <div id="google-reviews"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCkkWprMEsJmfTP9XE345_HRfi4elv8Qis&signed_in=true&libraries=places"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=yourapikey&signed_in=true&libraries=places"></script>
 <script src="slick.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!--places Reviews detail pluging-->
@@ -130,7 +130,7 @@
         $.googlePlaces = function(element, options) {
 
             var defaults = {
-                placeId: 'ChIJO9d84ahxdDkRmL0NKmpGf_0' // placeId provided by google api documentation
+                placeId: 'yourplaceid' // placeId provided by google api documentation
                 , render: ['reviews']
                 , min_rating: 5
                 , max_rows: 6
@@ -284,7 +284,7 @@
 
     $(document).ready(function( $ ) {
         $("#google-reviews").googlePlaces({
-            placeId: 'ChIJO9d84ahxdDkRmL0NKmpGf_0',
+            placeId: 'yourplaceid',
             render: ['reviews'],
             min_rating: 4,
             max_rows:7
