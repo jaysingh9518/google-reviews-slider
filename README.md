@@ -1,75 +1,91 @@
 # Google Reviews Slider
 
-A simple and customizable Google Reviews slider widget that can be easily integrated into any website. Display Google reviews in a stylish, dynamic, and responsive slider to boost credibility and user engagement.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Overview
+
+The **Google Reviews Slider** is a simple, elegant solution for showcasing Google Business reviews on your website. This slider fetches and displays reviews from your Google Business profile, providing an interactive and visually appealing way to highlight customer feedback.
 
 ## Features
 
-- Fetch and display Google reviews dynamically
-- Responsive design that works on all devices
-- Customizable slider settings (speed, transition, etc.)
-- Easy integration with any website
+- Fetches Google Business reviews dynamically
+- Responsive design
+- Easy integration into any website
+- Customizable appearance
+- Automatic sliding with pause on hover
+- Lightweight and fast
 
 ## Demo
 
-[Check out the live demo](https://jaysingh9518.github.io/google-reviews-slider/)
+Check out the [live demo](https://jaysingh9518.github.io/google-reviews-slider/) to see the slider in action.
 
 ## Installation
 
+### Prerequisites
+
+- A Google Business profile with publicly visible reviews
+- Google Places API key
+
+### Steps
+
 1. Clone the repository:
-    ```sh
+    ```bash
     git clone https://github.com/jaysingh9518/google-reviews-slider.git
     ```
+
 2. Navigate to the project directory:
-    ```sh
+    ```bash
     cd google-reviews-slider
     ```
-3. Open `index.html` in your browser to see the slider in action.
+
+3. Open `index.html` in a text editor and replace `'YOUR_GOOGLE_PLACES_API_KEY'` with your actual Google Places API key.
+
+4. Customize the slider appearance in `style.css` if necessary.
+
+5. Deploy the project files to your web server.
 
 ## Usage
 
-1. Include the required CSS and JavaScript files in your HTML:
+To integrate the Google Reviews Slider into your website:
+
+1. Include the necessary HTML snippet where you want the slider to appear:
     ```html
-    <link rel="stylesheet" href="path/to/your/css/styles.css">
-    <script src="path/to/your/js/script.js"></script>
+    <div id="google-reviews-slider"></div>
     ```
 
-2. Add the slider markup to your HTML:
+2. Ensure you have included the required CSS and JS files in your HTML:
     ```html
-    <div id="google-reviews-slider">
-        <!-- Reviews will be dynamically loaded here -->
-    </div>
+    <link rel="stylesheet" href="path/to/style.css">
+    <script src="path/to/script.js"></script>
     ```
 
 3. Initialize the slider in your JavaScript:
     ```javascript
-    document.addEventListener('DOMContentLoaded', function() {
-        GoogleReviewsSlider.init({
-            apiKey: 'YOUR_GOOGLE_API_KEY',
-            placeId: 'YOUR_GOOGLE_PLACE_ID',
-            numReviews: 5,
-            sliderSettings: {
-                speed: 500,
-                transition: 'slide'
-            }
-        });
+    document.addEventListener("DOMContentLoaded", function() {
+        initGoogleReviewsSlider();
     });
     ```
 
 ## Configuration
 
-- `apiKey`: Your Google API key.
-- `placeId`: The Place ID of your business.
-- `numReviews`: Number of reviews to fetch and display.
-- `sliderSettings`: Customize the slider settings (speed, transition, etc.).
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details.
+You can configure various aspects of the slider by modifying the parameters in `script.js`:
+- `numReviews`: Number of reviews to display
+- `slideInterval`: Time interval between slides in milliseconds
+- `showRating`: Display star rating (true/false)
 
 ## Contributing
 
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+Contributions are welcome! If you have suggestions, bug reports, or improvements, feel free to submit a pull request or open an issue.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE.txt) file for details.
+
+## Acknowledgments
+
+- [Google Places API](https://developers.google.com/places/web-service/overview)
+- [Slick Carousel](https://kenwheeler.github.io/slick/)
 
 ## Contact
 
-For any inquiries or support, please contact [Jay Prakash](https://jaysingh9518.github.io/) or open an issue in this repository.
+For more information, please visit my [GitHub profile](https://github.com/jaysingh9518) or [portfolio website](https://jaysingh9518.github.io/).
